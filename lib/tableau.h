@@ -2,7 +2,7 @@
 #define _TABLEAU_H_
 
 #define N 4 //la taille du jeu (N cartes)
-#define M 4 //chaque carte est divisé en M^2 partie
+#define M 5 //chaque carte est divisé en M^2 partie
 
 //VARIABLES
 typedef struct zone_s{
@@ -19,13 +19,11 @@ typedef struct carte_s{
 }carte_t;
 
 carte_t * jeu[N];//le jeu
-int ordre[N];//indique comment les cartes sont conectées
 
 //FONCTIONS
-zone_t * creation_zone(void);//création d'une zone
-carte_t * creation_carte(void);//création d'une carte
-void creation_jeu(void);//création du jeu
-int recherche_ordre(int, int);//recherche si r est déja dans ordre jusqu'à l
-void ordre_aleatoire(void);//cartes mises aléatoirement
+zone_t * creation_zone(int);//création d'une zone
+carte_t * creation_carte(int);//création d'une carte
+int creation_jeu(void);//création du jeu
+int destruction_jeu(void);
 
 #endif
