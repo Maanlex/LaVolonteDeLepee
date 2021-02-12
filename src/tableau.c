@@ -7,10 +7,10 @@ zone_t * creation_zone(){
   zone_t * z = malloc(sizeof(zone_t));
   int i = rand() % 4;
   switch(i){
-    case 0 : z->element="s"; break;//affichage a remplir
-    case 1 : z->element="p"; break;
-    case 2 : z->element="l"; break;
-    case 3 : z->element="v"; break;
+    case 0 : z->element="s"; z->c="s";break;//affichage a remplir
+    case 1 : z->element="p"; z->c="p"; break;
+    case 2 : z->element="l"; z->c="l"; break;
+    case 3 : z->element="v"; z->c="v"; break;
   }
   return(z);
 }
