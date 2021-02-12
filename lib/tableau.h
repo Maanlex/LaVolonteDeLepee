@@ -7,7 +7,7 @@
 //VARIABLES
 typedef struct zone_s{
   char element;//type de cette partie('s'ol, 'l'ave, 'p'ic, 'v'ide)
-  //affichage
+  char c;//affichage
 }zone_t;
 
 typedef struct carte_s{
